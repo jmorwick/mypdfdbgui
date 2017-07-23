@@ -17,6 +17,7 @@ def save_pdf_file(directory, data, pub_key = None):
     f = open(fname, 'wb')
     f.write(data)
     f.close()
+    return hashhex
     
 def load_pdf_file(directory, hashhex, priv_key = None):
     """load binary pdf data from the store
